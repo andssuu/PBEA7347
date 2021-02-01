@@ -6,7 +6,7 @@ from sklearn import preprocessing
 
 
 def load_data(url):
-    df = pd.read_csv('PBEA7347/data/b3_data_14012021.csv',
+    df = pd.read_csv('../data/b3_data_14012021.csv',
                      float_precision='high', sep=";")
     data = df.iloc[:, 3:]
     labels = df.iloc[:, 0]
